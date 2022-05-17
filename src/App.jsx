@@ -4,8 +4,8 @@ import Home from './Home';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Content from './Content';
 import About from './About';
-import ListCompany from './pages/ListCompanies';
-import ListProject from './pages/ListProjectsByCompany';
+import ListCompany from './Pages/ListCompanies';
+import ListProjectsByCompany from './Pages/ListProjectsByCompany';
 
 function App() {
   // console.log("rendering App");

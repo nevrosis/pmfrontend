@@ -1,5 +1,5 @@
 import React from 'react'
-import ListCompanies from './pages/ListCompanies'
+import ListCompanies from './Pages/ListCompanies'
 
 const Header = () => {
     // console.log("rendering Header");

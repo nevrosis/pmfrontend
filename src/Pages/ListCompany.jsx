@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import ListProjectsByCompany from './ListProjectsByCompany';
 
 const ListCompany = () => {
-  // console.log("rendering ListCompany");
 
   const [companies, setCompanies] = useState([]);
 
