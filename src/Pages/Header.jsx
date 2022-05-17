@@ -1,8 +1,7 @@
 import React from 'react'
-import ListCompanies from './Pages/ListCompanies'
+import ListCompanies from '../Components/ListCompanies'
 
 const Header = () => {
-    // console.log("rendering Header");
     const css = {
         padding: '0px',
         margin: '0px',

@@ -1,5 +1,5 @@
 import React from 'react'
-import api from '../api/fetchCompany';
+import api from '../Api/fetchCompany';
 import { useEffect, useState } from 'react';
 // import ListProjectsByCompany from './ListProjectsByCompany';
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const ListCompanies = () => {
   const navigate = useNavigate();
   const [companies, setCompanies] = useState([]);
+  // const [companyId, setCompanyId] = useState(0);
 
 
   useEffect(() => {
@@ -22,10 +23,19 @@ const ListCompanies = () => {
     fetch();
   }, [])
 
+  // useEffect(() => {
+  //   console.log(1);
+  //   navigate(`/board`);
+  // }, [companyId])
+
   const handleClick = (id) => {
+    sessionStorage.setItem('companyId', id);
+    // setCompanyId(id);
+    navigate(`/board`);
+    //window.location.reload(false);
     // setCompanies(name);
     // console.log(`${name}`);
-    navigate(`/company/${id}`);
+    // navigate(`/company/${id}`);
   }
 
 

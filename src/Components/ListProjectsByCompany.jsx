@@ -1,5 +1,5 @@
 import React from 'react'
-import api from '../api/fetchProject';
+import api from '../Api/fetchProject';
 import { useEffect, useState } from 'react';
 
 const ListProjectsByCompany = ({ companyId }) => {

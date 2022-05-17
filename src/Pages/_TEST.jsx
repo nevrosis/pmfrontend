@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-const Content = () => {
+const Test = () => {
 
   const [name, setName] = useState('Dave');
 
@@ -27,4 +27,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Test

@@ -1,31 +1,23 @@
 import './App.css';
-import Layout from './Layout'
-import Home from './Home';
+import Layout from './Pages/Layout'
+import Home from './Pages/Home';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import Content from './Content';
-import About from './About';
-import ListCompany from './Pages/ListCompanies';
-import ListProjectsByCompany from './Pages/ListProjectsByCompany';
+import Test from './Pages/_TEST';
+import About from './Pages/About';
+import Board from './Pages/Board';
+// import ListProjectsByCompany from './Pages/ListProjectsByCompany';
 
 function App() {
-  // console.log("rendering App");
-
-
   //const navigate = useNavigate();
   // navigate('/');//TO FORCE GOING BACK TO A ROUTE
-
-
-
-
-
 
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index path='/' element={<Home />} />
-        <Route index path='company' element={<ListCompany />} />
-        {/* <Route index path='project' element={<ListProject />} /> */}
-        <Route path='content' element={<Content />} />
+        <Route path='board' element={<Board />} />
+        {/* <Route path='project' element={<ListProject />} /> */}
+        <Route path='test' element={<Test />} />
         <Route path='about' element={<About />} />
       </Route>
     </Routes>
